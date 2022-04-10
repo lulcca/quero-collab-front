@@ -1,0 +1,253 @@
+body {
+  background-color: #EEF0F4 !important;
+  font-family: "proxima-soft", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  height: 64px;
+}
+
+header {
+  height: 96px;
+}
+
+header a {
+  color: inherit;
+  font-weight: 100;
+  text-decoration: none;
+}
+
+hr {
+  width: 100%;
+  border: 1px solid #e6e4e4;
+}
+
+.selected {
+  border-bottom: 4px solid white;
+  color: white;
+  font-size: 18px;
+  padding-bottom: 9px !important;
+}
+
+.primaryNavBg {
+  background-color: #31383E; 
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+}
+
+.secondaryNavBg {
+  background-color: #ffffff;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 15%);
+  height: 48px;
+  position: fixed;
+  top: 48px;
+  width: 100%;
+  z-index: 98;
+}
+
+.ui-container {
+  display: flex;
+  flex-flow: row wrap;
+  line-height: 1;
+  margin: 0 auto;
+  max-width: 83.33333%;
+}
+
+.primaryNav {
+  align-items: center;
+  color: #8E98A7; 
+  display: grid;
+  font-family: "Doppio One", sans-serif;
+  grid-template-areas: "logo links user";
+  grid-template-columns: min-content auto min-content;
+  height: 48px;
+}
+
+.primaryNav a {
+  padding: 0.7rem 1rem;
+}
+
+.logo {
+  color: white;
+  display: flex;
+  font-size: 24px;
+  font-weight: 100;
+  grid-area: logo;
+  justify-content: center;
+  width: 60px;
+}
+
+.links {
+  grid-area: links;
+}
+
+.user {
+  display: grid;
+  grid-area: user;
+  grid-template-areas: "helper market picture";
+  grid-template-columns: min-content auto min-content;
+}
+
+.help {
+  grid-area: helper;
+}
+
+.market {
+  align-items: center;
+  border: 1px solid #8E98A7;
+  border-radius: 30px;
+  display: flex;
+  grid-area: market;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.picture {
+  grid-area: picture;
+}
+
+.secondaryNav {
+  display: flex;
+  justify-content: end;
+}
+
+.secondaryNav img {
+  padding: 0 12px 0 20px;
+}
+
+.companyContainer {
+  align-items: center;
+  border-left: 1px solid #E9EDF2;
+  display: flex;
+  font-weight: 600;
+  height: 48px;
+  color: #5A626D;
+}
+
+.companyContainer:hover {
+  color: #3FACEE;
+}
+
+.your-section {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+  width: 100%;
+}
+
+.your-post {
+  background: #FFFFFF;
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: grid;
+  padding: 24px;
+  width: 100%;
+}
+
+.your-post__header {
+  color: #8E98A7;
+  font-family: "Doppio One", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: start;
+}
+
+.your-post__publication {
+  color: #31383E;
+  font-family: "Doppio One", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  text-align: start;
+}
+
+.your-post__button-container {
+  display: flex;
+  justify-content: end;
+}
+
+.your-post__button {
+  background: #0A9AEB;
+  border: none;
+  border-radius: 25px;
+  color: #FFFFFF;
+  display: flex;
+  font-family: "Doppio One", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  justify-content: center;
+  padding: 12px 42px;
+  width: 145px;
+}
+
+.their-title {
+  color: #31383E;
+  font-family: "proxima-soft", sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  margin-top: 48px;
+  padding: 0 4px;
+}
+
+.their-container {
+  margin: 0 auto;
+  width:90%;
+}
+
+.their-section {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.their-post {
+  background: #FFFFFF;
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: grid;
+  padding: 24px;
+  width: 100%;
+}
+
+.their-post__info{
+  align-items: center;
+  column-gap: 12px;
+  display: flex;
+  height: 32px;
+}
+
+.their-post__photo{
+  height: 26px;
+  width: 26px;
+}
+
+.their-post__name {
+  color: #8E98A7;
+  font-family: "Doppio One", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: start;
+}
+
+.their-post__publication {
+  color: #31383E;
+  font-family: "Doppio One", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  text-align: start;
+}

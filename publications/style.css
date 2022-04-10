@@ -11,6 +11,7 @@ footer {
 
 header {
   height: 96px;
+  padding: 0 12px;
 }
 
 header a {
@@ -24,11 +25,12 @@ hr {
   border: 1px solid #e6e4e4;
 }
 
-.selected {
-  border-bottom: 4px solid white;
-  color: white;
-  font-size: 18px;
-  padding-bottom: 9px !important;
+.ui-container {
+  display: flex;
+  flex-flow: row wrap;
+  line-height: 1;
+  margin: 0 auto;
+  max-width: 83.33333%;
 }
 
 .primaryNavBg {
@@ -36,6 +38,79 @@ hr {
   position: fixed;
   width: 100%;
   z-index: 99;
+}
+
+.primaryNav {
+  align-items: center;
+  color: #8E98A7;
+  font-family: "Doppio One", sans-serif;
+  height: 48px;
+}
+
+.content {
+  align-items: center;
+  display: flex;
+  margin-right: auto;
+}
+
+.logo {
+  color: white;
+  font-size: 24px !important;
+}
+
+.content a {
+  font-size: 14px;
+  font-weight: 100;
+  padding: 0.7rem 1rem;
+}
+
+.content a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.user {
+  align-items: center;
+  display: flex;
+}
+
+.question-mark {
+  padding: 12px;
+}
+
+.market-container {
+  align-items: center;
+  display: flex;
+  padding: 8px;
+}
+
+.market-container a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.market {
+  align-items: center;
+  border: 1px solid #8E98A7;
+  border-radius: 30px;
+  display: flex;
+  font-size: 14px;
+  height: 32px !important;
+  line-height: 14px;
+  padding: 6px 8px !important;
+  column-gap: 8px;
+  vertical-align: middle;
+}
+
+.profile-picture {
+  padding: 6px;
+}
+
+.selected {
+  border-bottom: 4px solid white;
+  color: white;
+  font-size: 18px !important;
+  padding-bottom: 13px !important;
 }
 
 .secondaryNavBg {
@@ -48,67 +123,6 @@ hr {
   z-index: 98;
 }
 
-.ui-container {
-  display: flex;
-  flex-flow: row wrap;
-  line-height: 1;
-  margin: 0 auto;
-  max-width: 83.33333%;
-}
-
-.primaryNav {
-  align-items: center;
-  color: #8E98A7; 
-  display: grid;
-  font-family: "Doppio One", sans-serif;
-  grid-template-areas: "logo links user";
-  grid-template-columns: min-content auto min-content;
-  height: 48px;
-}
-
-.primaryNav a {
-  padding: 0.7rem 1rem;
-}
-
-.logo {
-  color: white;
-  display: flex;
-  font-size: 24px;
-  font-weight: 100;
-  grid-area: logo;
-  justify-content: center;
-  width: 60px;
-}
-
-.links {
-  grid-area: links;
-}
-
-.user {
-  display: grid;
-  grid-area: user;
-  grid-template-areas: "helper market picture";
-  grid-template-columns: min-content auto min-content;
-}
-
-.help {
-  grid-area: helper;
-}
-
-.market {
-  align-items: center;
-  border: 1px solid #8E98A7;
-  border-radius: 30px;
-  display: flex;
-  grid-area: market;
-  font-size: 14px;
-  line-height: 14px;
-}
-
-.picture {
-  grid-area: picture;
-}
-
 .secondaryNav {
   display: flex;
   justify-content: end;
@@ -118,10 +132,16 @@ hr {
   padding: 0 12px 0 20px;
 }
 
+.secondaryNav a:hover{
+  color: #0A9AEB;
+  text-decoration: none;
+}
+
 .companyContainer {
   align-items: center;
   border-left: 1px solid #E9EDF2;
   display: flex;
+  font-family: "proxima-soft", sans-serif;
   font-weight: 600;
   height: 48px;
   color: #5A626D;

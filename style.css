@@ -5,8 +5,26 @@ body {
   padding: 0;
 }
 
+header {
+  font-family: "Doppio One", sans-serif;
+}
+
+header a {
+  color: inherit;
+  font-weight: 100;
+  padding: 0.7rem 1rem;
+  text-decoration: none;
+}
+
+.selected {
+  border-bottom: 4px solid white;
+  color: white;
+  font-size: 18px;
+  padding-bottom: 9px;
+}
+
 .primaryNavBg{
-  background-color: #31383E;
+  background-color: #31383E; 
   position: fixed;
   width: 100%;
   z-index: 99;
@@ -21,20 +39,6 @@ body {
   z-index: 98;
 }
 
-header a {
-  color: #8E98A7;
-  font-family: "Doppio One", sans-serif;
-  font-weight: 100;
-  padding: 0.7rem 1rem;
-  text-decoration: none;
-}
-
-header a.selected {
-  font-size: 18px;
-  color: white;
-  
-}
-
 .ui-container{
   display: flex;
   flex-flow: row wrap;
@@ -45,6 +49,7 @@ header a.selected {
 
 .primaryNav {
   align-items: center;
+  color: #8E98A7; 
   display: grid;
   grid-template-areas: "logo links user";
   grid-template-columns: min-content auto min-content;
@@ -53,15 +58,43 @@ header a.selected {
 
 .logo{
   color: white;
+  display: flex;
   font-size: 24px;
   font-weight: 100;
   grid-area: logo;
+  justify-content: center;
   width: 60px;
 }
 
 .links{
   grid-area: links;
 }
+
+.user{
+  display: grid;
+  grid-area: user;
+  grid-template-areas: "helper market picture";
+  grid-template-columns: min-content auto min-content;
+}
+
+.help{
+  grid-area: helper;
+}
+
+.market{
+  align-items: center;
+  border: 1px solid #8E98A7;
+  border-radius: 30px;
+  display: flex;
+  grid-area: market;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.picture{
+  grid-area: picture;
+}
+
 
 .corpse {
   position: fixed;

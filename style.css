@@ -15,7 +15,7 @@ header a {
   border-bottom: 4px solid white;
   color: white;
   font-size: 18px;
-  padding-bottom: 9px;
+  padding-bottom: 9px !important;
 }
 
 .primaryNavBg{

@@ -123,3 +123,172 @@ header a {
   top: 96px;
   z-index:97;
 }
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 65% 40%;
+  min-height: 100%;
+  column-gap: 10px;
+  padding: 10px;
+}
+
+.grid-item {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+
+
+.grid-item h2 {
+  font-family: 'Doppio One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  color: #31383E;
+  text-align: start;
+  margin-right: 100px;
+}
+
+.grid-container2 {
+  align-items: center;
+  display: grid;
+  padding-left: 50px;
+  grid-template-columns: 60px 40%;
+
+}
+
+.grid-item2 {
+  font-size: 30px;
+  text-align: center;
+}
+
+.photo {
+  margin-top: 50px;
+  width: 50px;
+  height: 50px;
+  background: red;
+  border-radius: 50%
+}
+
+.name {
+  margin-top: 50px;
+  margin-left: -30px;
+  font-family: 'Doppio One';
+  font-style: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #31383E;
+}
+
+.category {
+  margin-left: -30px;
+  margin-top: 5px;
+  font-family: 'Doppio One';
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #8E98A7;
+}
+
+.your-subtitle {
+  padding-top: 20px;
+  margin-left: 25px;
+  margin-bottom: 16px;
+  text-align: start;
+  font-family: 'Doppio One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+
+
+  color: #8E98A7;
+}
+
+
+.your-publication {
+  margin-left: 25px;
+  margin-bottom: 10px;
+  text-align: start;
+  font-family: 'Doppio One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #31383E;
+}
+
+.your-button {
+  border: none;
+  background: #0A9AEB;
+  border-radius: 25px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 19px;
+  color: #FFFFFF;
+  padding: 10px 42px;
+  margin-top: 40px;
+  margin-left: 70%;
+
+
+}
+
+.grid-item3 {
+  background: #FFFFFF;
+  padding-bottom: 25px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+hr {
+  margin-top: 50px;
+  width: 935px;
+  border: 1px solid #e6e4e4;
+}
+
+
+.grid-item4 {
+  margin-top: 40px;
+  background: #FFFFFF;
+  padding-bottom: 25px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+.publication {
+  font-family: 'Doppio One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0 24px;
+  color: #8E98A7;
+}
+
+.grid-item5 {
+  font-size: 30px;
+  text-align: start;
+  margin-top: 40px;
+}
+
+.grid-container5 {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 50px 95%;
+  padding: 0 24px;
+
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  background: red;
+  border-radius: 50%
+}

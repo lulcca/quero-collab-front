@@ -5,14 +5,9 @@ body {
   padding: 0;
 }
 
-header {
-  font-family: "Doppio One", sans-serif;
-}
-
 header a {
   color: inherit;
   font-weight: 100;
-  padding: 0.7rem 1rem;
   text-decoration: none;
 }
 
@@ -32,6 +27,7 @@ header a {
 
 .secondaryNavBg{
   background-color: #ffffff;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 15%);
   height: 48px;
   position: fixed;
   top: 48px;
@@ -51,9 +47,14 @@ header a {
   align-items: center;
   color: #8E98A7; 
   display: grid;
+  font-family: "Doppio One", sans-serif;
   grid-template-areas: "logo links user";
   grid-template-columns: min-content auto min-content;
   height: 48px;
+}
+
+.primaryNav a {
+  padding: 0.7rem 1rem;
 }
 
 .logo{
@@ -95,6 +96,27 @@ header a {
   grid-area: picture;
 }
 
+.secondaryNav{
+  display: flex;
+  justify-content: end;
+}
+
+.secondaryNav img{
+  padding: 0 12px 0 20px;
+}
+
+.companyContainer{
+  align-items: center;
+  border-left: 1px solid #E9EDF2;
+  display: flex;
+  font-weight: 600;
+  height: 48px;
+  color: #5A626D;
+}
+
+.companyContainer:hover{
+  color: #3FACEE;
+}
 
 .corpse {
   position: fixed;
